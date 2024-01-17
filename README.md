@@ -35,7 +35,7 @@ In the future, I want to add some additional features to this project. It will b
 two things per year, depending on my time availability.
 
 There's a shortly described list:
-- supported Windows and Linux platforms [MP-PD-F-01],
+- ~~supported Windows and Linux platforms [MP-PD-F-01]~~,
 - notifying mobile app about active windows changing [MP-PD-F-02],
 - basic tests for CRUD [MP-PD-F-03],
 - missing dependencies popup ? [MP-PD-F-04],
