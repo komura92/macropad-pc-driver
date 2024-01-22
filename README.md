@@ -42,4 +42,5 @@ There's a shortly described list:
 - more advanced entity definition and tests adaptation [MP-PD-F-05],
 - selectable CRUD functions to generate [MP-PD-F-06],
 - defining CRUD sub-objects [MP-PD-F-07],
-- GUI actions configuration [MP-PD-F-08].
+- GUI actions configuration [MP-PD-F-08],
+- ~~registration with hostname [MP-PD-F-09].~~
