@@ -14,6 +14,15 @@ EVENTS = [
     # ######## desktop events ########
     ##################################
     {
+        "action": "ADD_DART",
+        "function": lambda: (
+            pyautogui.hotkey('alt', 'insert'),
+            pyautogui.sleep(0.1),
+            pyautogui.typewrite('dart'),
+            pyautogui.hotkey('enter')
+        )
+    },
+    {
         "action": "RUN_INTELLIJ",
         "function": lambda: (
             pyautogui.hotkey('win', '2')
