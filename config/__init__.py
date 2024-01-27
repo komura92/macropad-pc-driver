@@ -1,9 +1,9 @@
-from config.events_conf import EVENTS
+from config.events_conf import ACTIONS
 
-AVAILABLE_ACTIONS = [event['action'] for event in EVENTS]
+AVAILABLE_ACTIONS = [event['action'] for event in ACTIONS]
 
 FUNCTIONS_BY_EVENT_ACTION = {}
 
-for event in EVENTS:
-    if 'function' in event.keys():
-        FUNCTIONS_BY_EVENT_ACTION[event['action']] = event['function']
+for action in ACTIONS:
+    if 'function' in action.keys():
+        FUNCTIONS_BY_EVENT_ACTION[action['action']] = action['function']

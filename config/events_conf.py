@@ -9,19 +9,10 @@ import pyperclip
 from crudgenerator import generate
 
 
-EVENTS = [
+ACTIONS = [
     ##################################
     # ######## desktop events ########
     ##################################
-    {
-        "action": "ADD_DART",
-        "function": lambda: (
-            pyautogui.hotkey('alt', 'insert'),
-            pyautogui.sleep(0.1),
-            pyautogui.typewrite('dart'),
-            pyautogui.hotkey('enter')
-        )
-    },
     {
         "action": "RUN_INTELLIJ",
         "function": lambda: (
@@ -89,6 +80,15 @@ EVENTS = [
     #######################################
     # ######## programming events #########
     #######################################
+    {
+        "action": "ADD_DART",
+        "function": lambda: (
+            pyautogui.hotkey('alt', 'insert'),
+            pyautogui.sleep(0.1),
+            pyautogui.typewrite('dart'),
+            pyautogui.hotkey('enter')
+        )
+    },
     {
         "action": "SWITCH_CASE_SHORTCUT",
         "function": lambda: (
@@ -173,6 +173,7 @@ def showEntityWizard(projectDir):
     frame.attributes('-topmost', True)
     frame.update()
     frame.attributes('-topmost', False)
+    inputText.focus_force()
     frame.mainloop()
 
 

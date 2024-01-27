@@ -28,7 +28,7 @@ def activityMonitor():
                 sse_server_client.setActiveMacropadTab(activity['menuIdentifier'])
                 lastActiveTab = activity['menuIdentifier']
         if driver_config.PRINT_ACTIVE_WINDOW_NAME:
-            print(pyautogui.getActiveWindowTitle())
+            print(f'"{pyautogui.getActiveWindowTitle()}"')
         time.sleep(0.1)
 
 

@@ -4,6 +4,7 @@ PROGRAMMING_TAB_WINDOW_TITLES_ELEMENTS = ['.java',
                                           '.py',
                                           '.md',
                                           '.xml',
+                                          '.sh',
                                           '.dart']
 
 
@@ -16,7 +17,7 @@ def validateProgrammingSwitch():
 
 def validateDesktopSwitch():
     activeWindowTitle = pyautogui.getActiveWindowTitle()
-    return activeWindowTitle and 'Program Manager' in activeWindowTitle
+    return activeWindowTitle is not None and ('Program Manager' in activeWindowTitle or activeWindowTitle == '')
 
 
 # List conditions to switch options on macropad
