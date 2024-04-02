@@ -40,7 +40,7 @@ ACTIONS = [
     {
         "action": "RUN_EXPLORER",
         "function": lambda: (
-            pyautogui.hotkey('win', 'e')
+            pyautogui.hotkey('win', '7')
         )
     },
     {
@@ -111,6 +111,12 @@ ACTIONS = [
         "action": "EVALUATOR_SHORTCUT",
         "function": lambda: (
             pyautogui.hotkey('alt', 'shift', '8')
+        )
+    },
+    {
+        "action": "OPEN_IJ_TERMINAL",
+        "function": lambda: (
+            pyautogui.hotkey('alt', 'f12')
         )
     },
     {
