@@ -1,0 +1,4 @@
+requests~=2.31.0
+PyAutoGUI~=0.9.54
+pyperclip~=1.8.2
+sseclient~=0.0.27
