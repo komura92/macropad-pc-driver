@@ -1,4 +1,4 @@
-# TARGET_DEVICE_ID = "<your device ID - list available in console>"
+TARGET_DEVICE_ID = "<your device ID>"
 
 PRINT_AVAILABLE_DEVICES = True
 ENABLE_WINDOW_MONITORING = False
